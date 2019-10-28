@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>节点的替换</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<style type="text/css">
+</style>
+
+<script type="text/javascript">
+    function t1() {
+        // 思路: "找到北",
+        // 创建一个"<li>上</li>"
+        // 再找到"北"的父元素.
+        // 在北的父元素,调用北父.replaceChild(新,旧)方法
+
+        var newli = document.createElement('li');
+        var cont = document.createTextNode('上');
+        newli.appendChild(cont);
+
+        var uln = document.getElementsByTagName('ul')[0];
+        var bei = uln.children[4];
+
+
+        uln.replaceChild(newli,bei);
+
+    }
+</script>
+</head>
+    <body>
+        <ul>
+            <li>东</li>
+            <li>南</li>
+            <li>中</li>
+            <li>西</li>
+            <li>北</li>
+        </ul>
+
+        <div id="cart">
+            
+        </div>
+
+        <input type="button" value="把北替换成上" onclick="t1();" />
+    </body>
+</html>

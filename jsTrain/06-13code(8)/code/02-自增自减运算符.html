@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>02-自增自减运算符</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<script type="text/javascript">
+    /*
+    function grow() {
+        var age = document.getElementById('ag').value;
+        age = parseInt(age);  // 把age字符串分析成整型来处理
+        // age += 1;
+        document.getElementById('ag').value = ++age; // 在使用age之前,就已经长了一岁
+    }
+    */
+
+    function grow() {
+        var age = document.getElementById('ag').value;
+        age = parseInt(age);  // 把age字符串分析成整型来处理
+        // age += 1;
+        alert('你现在' + (age++) + '岁,但吹完蜡烛就大一岁' );
+        document.getElementById('ag').value = age; // 在使用age之前,就已经长了一岁
+    }
+
+</script>
+
+</head>
+    <body>
+        <input id="ag" type="text" name="age" value="0" />
+        <input type="button" onclick="grow();" value="长大" />
+    </body>
+</html>

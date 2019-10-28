@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>11-算术运算符</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<script type="text/javascript">
+
+    var ben = 200;  // 赌本:200元
+    var quan = 5;   // 打一圈赢5块
+    var num = 30;
+
+    // 计算当前共有多少钱
+    var cnt =  ben + quan * num; // 200 + 5 * 30 (怎么不是205 * 30?)
+    document.write('你现在一共有' + cnt + '元钱<br />' );
+    
+    // 优先级:先乘除再加减. 如果想让加减优先,可以加括号.
+    document.write('2 + 3 * 4的值是' + (2 + 3 * 4) + "<br />");
+    document.write('(2+3) * 4的值是' + ((2+3)*4) + "<br />");
+
+
+    /**/
+    num = 30.5;
+    document.write(num + '对7取模得' + num%7 + "<br />"); 
+
+    num = -30.5;
+    document.write(num + '对7取模得' + num%7 + "<br />"); 
+
+
+    num = 30; //这个地方看到，整型乘以整型得到整型
+    document.write(quan + '乘以' + num + '得到' + quan*num  + '<br />');
+
+
+    // 整型相除可能得到整型
+    document.write(num + '除以5' + '得到' + num/5 + "<br />");
+
+    // 除不尽的时候得到是浮点型
+    document.write(num + '除以7' + '得到' + num/7 + "<br />");
+
+    
+    // 浮点型相除, 也有可能得到整型
+    var num = 4.8;
+    document.write(num + '除以1.2' + '得到' + num/1.2 + "<br />");
+
+    
+    // 整型浮点型相除的时候,返回值就决定于数学的运算的结果.
+
+
+    
+    // 请注意,编程语言,不止js中,都要求除数不能为0
+    // 如下例: 4.8除以0得到Infinity
+    document.write(num + '除以0' + '得到' + num/0 + "<br />");
+
+
+    
+
+
+
+
+
+
+
+
+
+</script>
+
+</head>
+    <body>
+    </body>
+</html>

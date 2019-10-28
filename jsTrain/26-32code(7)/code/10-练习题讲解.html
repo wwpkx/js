@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>练习题 讲解</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    /*
+    function rand() {
+        // return Math.random();    // 0 ->1
+        // return 5 * Math.random(); // 0 -> 5
+        return 5 * Math.random() + 5; // 5->10;
+    }
+
+    for(var i = 0; i<10; i++) {
+        document.write(rand() + "<br />");
+    }
+    */
+
+    /*
+    function rand(small,big) {
+        return (big - small) * Math.random() + small;
+    }
+
+    
+    for(var i = 0; i<10; i++) {
+        document.write(rand(9,17) + "<br />");
+    }
+    */
+    
+
+    /*
+    // 返回随机整数
+    function rand(small,big) {
+        return Math.ceil((big - small) * Math.random() + small);
+    }
+
+    for(var i = 0; i<10; i++) {
+        document.write(rand(9,17) + "<br />");
+    }
+    */
+
+    function clock() {
+        var today = new Date();
+        var year = today.getFullYear();
+        var month = today.getMonth();
+        var day = today.getDate();
+        var hour = today.getHours();
+        var mini = today.getMinutes();
+        var sec = today.getSeconds();
+        document.getElementById('clock').value =  ( year + " " + (month+1) +  " " +day + " " + hour + ':' + mini + ':' + sec);
+    }
+
+    
+
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+        <input type="text" id="clock" />
+        <script type="text/javascript">
+            setInterval('clock()',1000); // 
+        </script>
+    </body>
+</html>

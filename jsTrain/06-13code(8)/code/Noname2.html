@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>新建网页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<script type="text/javascript">
+    for(var g = 1;g <= 18; g++) {
+        for(var chu = 3; chu <=98; chu+=3) {
+            var m  = 100 - g - chu;
+            if(m < 1) break;
+            if((g + m + chu) == 100 && (5*g + 3*m + chu/3) == 100) {
+                document.write('公鸡' + g + ',母鸡' + m + '小鸡' + chu + "<br />");
+            }
+        }
+    }
+</script>
+
+</head>
+    <body>
+    </body>
+</html>

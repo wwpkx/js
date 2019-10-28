@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>for循环经典案例--百钱百鸡问题</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+
+/*
+今有鸡翁一，值钱五；鸡母一，值钱三；鸡雏三，值钱一；百钱买鸡百只，问鸡翁、母、雏各几何？
+题目的意思是，公鸡5文钱1只，母鸡3文钱1只，小鸡1文钱买3只，现在用100文钱共买了100只鸡，问：在这100只鸡中，公鸡、母鸡和小鸡各是多少只？（设每种至少一只）
+*/
+
+
+// 第一种解法
+// 考虑极端情况: 这个for循环没有解, 那么将运行 100 * 100 * 100 = 100W次
+/*
+for(var g = 1; g <= 100; g++) {
+    for(var m = 1; m <= 100; m++) {
+        for(var c = 1; c <= 100; c++) {
+            if((g+m+c) == 100 && (5*g + 3*m + c/3) == 100) {
+                document.write("公鸡" + g + "母" + m + "小鸡" + c + "<br />")
+            }
+        }
+    }
+}
+*/
+
+
+// 第2种情况:
+// 加上一点数学知识, 减少了一层for循环.
+// 最极端情况 100 * 100次
+/*
+for(var g = 1; g <= 100; g++) {
+    for(var m = 1; m <= 100; m++) {
+        var c = 100 - g - m;
+        if((g+m+c) == 100 && (5*g + 3*m + c/3) == 100) {
+            document.write("公鸡" + g + "母" + m + "小鸡" + c + "<br />")
+        }
+    }
+}
+*/
+
+// 第3种情况
+// 关于边界值,再优化
+/*
+公鸡 5 文, 共100文, <=18
+母鸡 3 文, <= 33 
+
+*/
+
+// 最极端情况,  18 * 33 = 594 
+/*
+for(var g = 1; g <= 18; g++) {
+    for(var m = 1; m <= 33; m++) {
+        var c = 100 - g - m;
+        if((g+m+c) == 100 && (5*g + 3*m + c/3) == 100) {
+            document.write("公鸡" + g + "母" + m + "小鸡" + c + "<br />")
+        }  
+    }
+}
+*/
+
+
+// 再提出一个问题:
+// 如果我只想最快得到一个答案去交差,
+// 不须要所有答案
+
+baiji:
+for(var g = 1; g <= 18; g++) {
+    for(var m = 1; m <= 33; m++) {
+        var c = 100 - g - m;
+        if((g+m+c) == 100 && (5*g + 3*m + c/3) == 100) {
+            document.write("公鸡" + g + "母" + m + "小鸡" + c + "<br />");
+            break baiji;
+        }       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

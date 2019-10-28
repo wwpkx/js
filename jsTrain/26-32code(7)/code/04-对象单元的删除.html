@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>04-对象单元的删除</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+     var stu = {'name':'xiaoming','age':22,'number':'007','score':99};
+
+     for(per in stu) {
+        document.write(stu[per] + "<br />");
+     } // 用for in结构时,利用属性访问值,只能用 obj[属性]这个方式,不能用obj.属性
+
+     document.write("<hr />");
+     delete stu.score;
+
+     for(per in stu) {
+        document.write(stu[per] + "<br />");
+     } // 用for in结构时,利用属性访问值,只能用 obj[属性]这个方式,不能用obj.属性
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

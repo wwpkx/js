@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>01-初识函数</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    // 从数学角度,函数就是变量的运算关系
+    
+    // 写一个求矩形面积的函数
+    // 矩形面积 = 长 * 宽
+    
+    // a,b是抽象出来的长和宽的表达方式,用x,y,甲,乙都一样
+    // 形式上的参数--形参
+    function zone(a,b) {            
+        return a * b;
+    }
+
+    // zone函数真正要表达的,不是a*b, 
+    // 而是: 给我2个数, 我返回给你 第1个数 * 第2个数;
+
+
+
+    // 3个矩形, 8*6, 9*5, 10.2 * 11.5
+
+    document.write(zone(8,6) + "<br />");
+
+    // 真正参与运算的,是x,y. 
+    // x,y是实际参与运算的参数----实参
+    var x = 200,y = 100;
+    document.write(zone(x,y) + "<br />");
+
+
+
+    // 上文中的"zone" ---- 叫函数名,是自己定义的.
+
+
+    
+
+
+
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

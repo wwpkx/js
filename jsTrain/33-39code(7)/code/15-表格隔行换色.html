@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>表格隔行换色</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    function chcolor() {
+        var trs = document.getElementsByTagName('tr');
+        for(var i=0,len=trs.length; i < len; i++ ) {
+            if(i%2==0) {
+                trs[i].style.background = 'blue';
+            } else {
+                trs[i].style.background = 'green';
+            }
+        }
+    }
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body onload="chcolor();">
+        <table border="1">
+            <tr><td>学号</td><td>姓名</td><td>年龄</td></tr>
+            <tr><td>学号</td><td>姓名</td><td>年龄</td></tr>
+            <tr><td>学号</td><td>姓名</td><td>年龄</td></tr>
+            <tr><td>学号</td><td>姓名</td><td>年龄</td></tr>
+            <tr><td>学号</td><td>姓名</td><td>年龄</td></tr>
+            <tr><td>学号</td><td>姓名</td><td>年龄</td></tr>
+        </table>
+    </body>
+</html>

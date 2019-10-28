@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>03-自增自减简单例子</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<script type="text/javascript">
+
+    var age = 0;
+
+    if(age++) {  // 先把age的值返回给if()来判断, 然后再加1
+        document.write("上" + age + "<br />");
+    } else {
+        document.write("下" + age + "<br />");
+    } //下1
+    
+    // 此时 age 是 1
+    // --age,其实牵涉2步, age的值减1,再把减1后的值返回给if()判断
+    if(--age) {
+        document.write("上" + age + "<br />");
+    } else {
+        document.write("下" + age + "<br />"); 
+    } //下0
+
+
+    
+    
+    
+    var a = 10;       //此时,内存中[10]
+    var b = (a++);    // 先从内存中读出a的值并返回10,b=10. a再自己加1 = 11;
+
+    
+    document.write(a + "<br />"); 
+    document.write(b + "<br />"); 
+    document.write(a + "<br />"); 
+    
+    // 错: 10, 10, 11, 27行a还没++,所以是10, 28行把a的值赋给b,然后再++,
+    // 错: 10, 11 ,11, 
+    // 对: 11, 10, 11, 31行的时候,27,28已经执行,a++对a的效果,是a=a+1;
+    // 错: 10, 11, 10 ,
+ 
+
+    // ======= 换一种情况 ======
+    a = 10;
+    b = ++a;
+
+    document.write(a + "<br />");
+    document.write(b + "<br />"); 
+    document.write(a + "<br />"); 
+
+    // 11,11,11
+
+
+</script>
+
+</head>
+    <body>
+    </body>
+</html>

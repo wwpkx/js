@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>onsubmit事件</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    function chk() {
+        if(document.getElementsByName('email')[0].value == '') {
+            alert('填上email');
+
+            return false;
+        }
+    }
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+
+          <form onsubmit="return chk();">
+            <p>
+                email:<input type="text" name="email" />
+            </p>
+            <p>
+                国家:<input type="text" name="country" />
+            </p>
+            <p>
+                <select name="xueli" onchange="t6();">
+                    <option value="">请选择学历</option>
+                    <option value="大学">大学</option>
+                    <option value="高中">高中</option>
+                    <option value="小学">小学</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="提交" />
+            </p>
+
+
+    </body>
+</html>

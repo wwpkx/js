@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>在指定位置增加一个子元素</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<style type="text/css">
+</style>
+
+<script type="text/javascript">
+    function t1() {
+        // 思路: "找到中",再找到"中"的父元素.
+        // 在中的父元素,调用removeChild()方法
+
+        var uln = document.getElementsByTagName('ul')[0];
+        var zhong = uln.children[2];
+
+        uln.removeChild(zhong);
+
+    }
+</script>
+</head>
+    <body>
+        <ul>
+            <li>东</li>
+            <li>南</li>
+            <li>中</li>
+            <li>西</li>
+            <li>北</li>
+        </ul>
+
+        <div id="cart">
+            
+        </div>
+
+        <input type="button" value="把中删除" onclick="t1();" />
+    </body>
+</html>

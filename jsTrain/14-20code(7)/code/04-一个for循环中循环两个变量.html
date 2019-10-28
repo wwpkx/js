@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>一个for循环循环打印两个变量</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+/*
+张三有9元钱, 李四有0元钱.
+张三不断的把钱给李四,每次给1元.
+直到自己没钱了....
+
+请用for循环来模拟给钱的过程.
+*/
+
+/*
+for(var i = 9,j = 0; i > 0; i--) {
+    document.write('张三有 ' + i +'元钱' + '给了李四1元,李四有'+ ++j + "元<br />");
+}
+*/
+
+
+
+/// 打印 如下效果
+/*
+9 - 0;
+8 - 1;
+7 - 2;
+....
+
+0 - 9;
+*/
+
+for(var i = 9, j = 0; i>=0 ; i--, j++) {
+    document.write(i + '----' + j + "<br />");
+}
+
+
+
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

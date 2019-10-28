@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>新建网页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    /*
+    while(false) {
+        document.write('我想用while来写一行<br />');
+    }
+
+
+    do{
+        document.write('我用do-while也写一行');
+    } while(false);
+    */
+
+    
+    var i = 0;
+    while(i++ < 3) {
+        document.write('while<br />'); // 打印3行
+    }
+
+
+    var j = 0;
+    do {
+        document.write('do-while<br />');  // 打印4行
+    } while(j++ < 3)
+    
+    
+
+    // 当i == 3时,  3 < 3,不成立. 因此,循环体不执行.
+    // 当j == 2时,  3 < 3,不成立, 但是,此时,document.write已经执行完毕了.....
+
+
+
+
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>07-函数是一种变量</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    
+    function t() {
+        return 5;
+    }
+
+    //alert(t); // 我们没var t; 为什么不报undefined错误??
+    // 函数本身也能当成变量看, 而变量名就是函数名.
+
+    var m = t;
+    //alert(m());
+
+
+    var n = function() {
+        return 8;
+    }
+
+    alert(n());
+
+
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

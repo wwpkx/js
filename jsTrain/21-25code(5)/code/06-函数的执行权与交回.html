@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>06-函数的执行权与执行权交回</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    var i = 0;
+    i += 3;
+    document.write('hello ');
+    
+    fun();
+
+    document.write('world');
+    document.write(i);
+
+
+    function fun() {
+        
+        i += 5;
+        if(i > 10) { 
+            return;
+        }
+
+        if(i < 10) {
+            return;
+        }
+
+        document.write('<br />~~~~<br />');
+    }
+
+
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

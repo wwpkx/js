@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>新建网页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+
+
+    function t1() {
+        alert(document.getElementById('artcicle'));
+    }
+
+    function t2() {
+        alert(document.getElementsByTagName('div').length);
+    }
+
+    function t3() {
+        // alert(document.getElementsByName('hobby'));
+        for(var i = 0,inp = document.getElementsByName('hobby'),len=inp.length; i < len; i++) {
+            alert(len + '####' + inp[i]);
+        }
+    }
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+        <p>
+            <span>我是span</span>
+            中国
+        </p>
+        <img src="aaa.jpg" />
+        <div id="artcicle" name="hobby">文章内容 </div>
+        <p>
+            <input type="text" name="hobby" />
+            <input type="text" name="hobby" />
+            <input type="text" name="hobby" />
+        </p>
+
+        <p>
+            <input type="button" value="ById" onclick="t1();" />
+        </p>
+
+        <p>
+            <input type="button" value="ByTagName" onclick="t2();" />
+        </p>
+        <p>
+            <input type="button" value="ByName" onclick="t3();" />
+        </p>
+    </body>
+</html>

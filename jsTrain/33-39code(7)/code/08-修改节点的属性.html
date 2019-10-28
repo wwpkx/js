@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>新建网页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    function t1() {
+        var email = document.getElementsByName('email')[0];
+        //alert('你的email是' + email.value);
+    }
+
+
+    function t2() {
+        var email = document.getElementsByName('email')[0];
+        if(email.value == '') {
+            email.value = '请输入邮件地址';
+        }
+    }
+
+
+    function t3() {
+        var email = document.getElementsByName('email')[0];
+        email.type = 'radio';
+    }
+
+
+</script>
+
+<style type="text/css">
+img {
+width:100px;
+}
+</style>
+</head>
+    <body>
+        <p>
+            <input type="text" name="email" value="" />
+        </p>
+
+        <p>
+        
+            <input type="button" value="邮件地址" onclick="t1();" />
+        </p>
+
+        <p>
+            <input type="button" value="检查邮件地址" onclick="t2();" />
+        </p>
+
+        <p>
+            <input type="button" value="变成radio" onclick="t3();" />
+        </p>
+    </body>
+</html>

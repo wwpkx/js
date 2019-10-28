@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>12-isNaN-isFinite</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    /*
+    var age = '999abd';
+    age = parseInt(age);
+    if(isNaN(age)) {
+        alert('是非数字');
+    } else {
+        alert('你的年龄是' + age);
+    }
+    */
+
+
+    var age = 1/0;
+    if(isFinite(age)) {
+        alert('你的年龄是' + age);
+    } else {
+        alert('你不可能这么大');
+    }
+
+    var age = -1/0;
+    if(isFinite(age)) {
+        alert('你的年龄是' + age);
+    } else {
+        alert('你不可能这么大');
+    }
+
+
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

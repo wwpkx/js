@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>逻辑运算符</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<script type="text/javascript">
+    
+    var house = 2;
+    var car = 1;
+    
+    // 表达式判断到house的时候,整个结果就已经可以判断完毕. 
+    // 所以表达式的运算结果是 house的值
+    /*
+    var res = house || car; 
+    alert(res);
+    */
+
+
+    // ===========
+    /*
+    house = 0;
+    car = 1;
+    var res = house || car;
+    alert(res);
+    */
+
+    
+    house = 0;
+    car = 1;
+    var res = car && house;
+    alert(res);
+
+    
+
+
+</script>
+
+</head>
+    <body>
+    </body>
+</html>

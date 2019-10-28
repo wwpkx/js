@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>15-创建数组的方式</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    // 创建空数组
+    /*
+    var arr = []; // 这是一个空数组;
+    var stu = new Array();
+    alert(arr.length);
+    alert(stu.length);
+    */
+
+
+    // 创建有初始值的非空数组:
+    /*
+    var arr = ['a','b','c','d'];
+    var stu = new Array('a','b','c','d');
+    
+    alert(arr[3]);
+    alert(stu[3]);
+    */
+
+    // 创建有N个箱子数组,但是呢,每个箱子都是空的
+    // 如果 new Array()的参数只有一个N,并且是整型,
+    // 则理解为创建一个N长度的空数组
+    var arr = new Array(10); 
+    alert(arr.length);
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

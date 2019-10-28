@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>05-对象的方法</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    var zhang = {name:'zhangsan',age:22,talk:null};
+    var lisi = {name:'lisi',age:22,talk:null};
+    
+    function t() {
+        alert('I am ' + this.name);
+    }
+    
+    zhang.talk = t;
+    lisi.talk = t;
+    
+    //  zhang.talk();
+    // lisi.talk();
+
+    var wang = {age:22,talk:null};
+    wang.talk = t;
+    wang.talk();
+
+    
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

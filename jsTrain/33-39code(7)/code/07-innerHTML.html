@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>07-innerHTML</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    function t1() {
+        var cont = document.getElementById('container');
+        alert(cont.innerHTML);
+    }
+
+    function t2(){
+        var cont = document.getElementById('container');
+
+        var htmlcode =   "<p><ul><li><span>东</span></li><li>南</li><li>西</li><li>北</li></ul></p>";
+
+       cont.innerHTML = htmlcode;
+    }
+
+
+    function t3(){
+        var cont = document.getElementById('container');
+        cont.innerHTML = "<img src='bai.gif' />";
+    }
+</script>
+
+</head>
+    <body>
+        <div id="container">
+            <p>
+                <ul>
+                    <li>好</li>
+                </ul>
+            </p>
+        </div>
+        <input type="button" value="内部的html代码" onclick="t1();" /> <br /> <br />
+        
+        <input type="button" value="修改内部的html代码" onclick="t2();" />
+        <input type="button" value="加个图片" onclick="t3();" />
+    </body>
+</html>

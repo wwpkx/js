@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>多路分支</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<script type="text/javascript">
+    /*
+    0-3:婴幼儿,
+    4-10:儿童
+    11-16:少年
+    17-30:青年
+    
+    >30, 怪黍蜀
+    */
+
+
+    var age = 2;
+
+    if(age <= 3) {
+        document.write("婴幼儿<br />");
+    } else if(age <= 10) {
+        document.write("儿童<br />");
+    
+    } else if(age <= 16) {
+        document.write("少年<br />");
+    
+    } else if(age <= 30) {
+        document.write("有为青年<br />");  
+    } else {
+        document.write("怪黍蜀<br />");  
+    }
+
+
+    // 思考: if/ else if, 从前往后执行的时候, 任意一个成立了,后面的分支将不再执行.
+
+
+
+
+</script>
+
+</head>
+    <body>
+    </body>
+</html>

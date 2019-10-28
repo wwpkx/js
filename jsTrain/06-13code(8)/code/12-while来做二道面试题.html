@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>while来做二道面试题</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<script type="text/javascript">
+/*
+写一个程序打印1到100这些数字。但是遇到数字为3的倍数的时候，打印“Fizz”替代数字，5的倍数用“Buzz”代替，既是3的倍数又是5的倍数打印“abcde”。
+*/
+
+
+    /*
+    var i = 1;
+    while(i <= 100) {
+        if(i%3 == 0) {
+            document.write(i + '-----Fizz<br />');
+        } else if(i%5 == 0) {
+            document.write(i + '-----Buzz<br />');
+        } else if(i%15 == 0) {
+            document.write(i + '-----abcde<br />');
+        } else {
+            document.write(i + '<br />');
+        }
+
+        i++;
+    }
+    */
+
+
+    var i = 1;
+    while(i <= 100) {
+        if(i%15 == 0) {
+            document.write(i + '-----abcde<br />');
+        } else if(i%5 == 0) {
+            document.write(i + '-----Buzz<br />');
+        } else if(i%3 == 0) {
+            document.write(i + '-----Fizz<br />');
+        } else {
+            document.write(i + '<br />');
+        }
+
+        i++;
+    } 
+
+    
+
+
+
+
+</script>
+
+</head>
+    <body>
+    </body>
+</html>

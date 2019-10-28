@@ -1,0 +1,16 @@
+1:练习window对象的子对象
+window.history
+window.location
+window.navigator
+window.screen
+
+
+2:练习window的对话框
+alert
+confirm
+prompt
+
+3:练习window的定时器与定时器的消除
+
+
+4:如完成较快,考虑5子棋的做法

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>09-再看作用域</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+        var a = 3;
+        var b = 4;
+        var c = 7;
+
+        function t(){
+            var a = 5;
+            var c = 6;
+            alert(a + '###' + b);
+
+            function m() {
+                // var d = 8;
+                d = 8;
+                alert(c);
+                alert(d);
+            }
+
+            m();
+        }
+
+
+        t(); // 5###4, 6,8
+        
+        alert(a); // 3
+        alert(d); // undefined,[8]
+
+
+/*
+在js中声明变量 ,必有用var;
+
+不用var 带来一个什么样的后果?
+
+变局变量被污染 
+
+*/
+
+
+</script>
+
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>

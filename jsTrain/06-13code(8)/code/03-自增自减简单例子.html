@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>03-自增自减简单例子</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<script type="text/javascript">
+
+    var age = 1;
+    if(age) {
+        document.write(age + "<br />");
+    } // 1
+
+
+    if(age--) {  // 先使用age<->1来判断,为真. 立即age - 1 = 0;
+        document.write(age + "<br />");
+    } // 0
+
+
+    if(age++) {  // 先使用0,再加1
+        document.write("上" + age + "<br />");
+    } else {
+        document.write("下" + age + "<br />");
+    } // 下1
+
+
+    if(--age) { // 先把age - 1,得到 0, 再使用这个 0
+        document.write("上" + age + "<br />");
+    } else {
+        document.write("下" + age + "<br />");
+    } // 下0
+
+
+    if(++age) {  // 先把age + 1 =  0 + 1 = 1
+        document.write("上" + age + "<br />");  
+    } else {
+        document.write("下" + age + "<br />");
+    } // 上1
+
+
+</script>
+
+</head>
+    <body>
+    </body>
+</html>

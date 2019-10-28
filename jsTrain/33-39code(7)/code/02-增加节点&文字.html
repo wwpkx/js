@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>新建网页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<style type="text/css">
+
+p{
+    width:100px;
+    height:100px;
+    background:blue;
+}
+
+
+#container p {
+    width:100px;
+    height:100px;
+    background:green;  
+}
+
+</style>
+
+
+<script type="text/javascript">
+    function t1() {
+        // 想在container里增加一个p节点,
+        // 分2步走,1:创建p结点
+        // 2:把p节点附加到container里.
+
+
+        // 创建p节点
+        var nodep = document.createElement('p');
+        var art = document.createTextNode(Math.random());
+        nodep.appendChild(art);
+    
+        var cont = document.getElementById('container');
+        cont.appendChild(nodep);
+
+    }
+</script>
+</head>
+    <body>
+        <p></p>
+        <div id="container">
+            <p></p>
+        </div>
+        <input type="button" value="增加P节点" onclick="t1();" />
+    </body>
+</html>

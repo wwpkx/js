@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>02-循环的退出</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<script type="text/javascript">
+    /*
+    var i = 0;
+    while(++i < 10) {
+        if(i == 5) {
+            break; // 破坏,破坏这个while循环,不再循环下去了. 
+        }
+        document.write(i + "<br />");
+    }
+    */
+
+
+    var i = 0;
+
+    while(++i < 10) {
+        if(i == 5) {
+            continue;
+        }
+        document.write(i + "<br />");
+    }
+
+
+
+
+</script>
+
+<style type="text/css">
+</style>
+</head>
+    <body>
+    </body>
+</html>
